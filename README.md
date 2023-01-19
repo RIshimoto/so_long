@@ -42,5 +42,9 @@
 $ git clone https://github.com/RIshimoto/so_long
 $ cd so_long
 $ make all
-$ ./so_long
+$ ./so_long Correct/(任意のマップファイル).bar
 ```
+
+## デモ
+https://user-images.githubusercontent.com/57135683/213430804-c294316b-a95b-4c01-980f-a1b6bfcc473a.mp4
+
