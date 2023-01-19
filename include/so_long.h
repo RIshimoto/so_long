@@ -25,7 +25,7 @@
 # define RED	0x00FF0000
 # define GREEN	0x0000FF00
 # define BLUE	0x000000FF
-# define TILE_SIZE 35
+# define TILE_SIZE 50
 # define QSIZE		1000000
 # define HASHSIZE	299993
 

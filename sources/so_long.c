@@ -140,7 +140,7 @@ void  load_texture(t_game *game, t_img *texture, char *path)
 		j = -1;
 		while (++j < TILE_SIZE)
 		{
-			index = (int)floor(i/Sx)*img.width+floor(j/Sy);
+			index = (int)floor(i/Sy)*img.width+floor(j/Sx); 
 			texture->addr[i * TILE_SIZE + j] = img.addr[index];
 		}
 	}
@@ -159,9 +159,9 @@ void game_init(t_game *game)
 	game->img.addr = (int*)mlx_get_data_addr(game->img.img, &game->img.bpp, &game->img.size_l, &game->img.endian);
 	load_texture(game, &game->texture[0], "./textures/colorstone.xpm");//0
 	load_texture(game, &game->texture[1], "./textures/wood.xpm");// 1 
-	load_texture(game, &game->texture[2], "./textures/barrel.xpm");// C
-	load_texture(game, &game->texture[3], "./textures/north.xpm");// E
-	load_texture(game, &game->texture[4], "./textures/SuwabeDolphin.xpm");// P
+	load_texture(game, &game->texture[2], "./textures/takara.xpm");// C
+	load_texture(game, &game->texture[3], "./textures/warp_hole.xpm");// E
+	load_texture(game, &game->texture[4], "./textures/dolphin.xpm");// P
 }
 
 
